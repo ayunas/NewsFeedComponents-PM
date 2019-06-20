@@ -1,0 +1,32 @@
+.slidein() {
+
+        animation-name: slidein;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+
+    @keyframes slidein {
+        from {
+           left : -700;
+        }
+
+        to {
+            left : 0;
+        }
+
+    }
+}
+
+.slideout() {
+    animation-name: slideout;
+    animation-duration: 1s;
+
+    @keyframes slideout {
+        from {
+            left : 0;
+        }
+
+        to {
+            left : -700;
+        }
+    }
+}

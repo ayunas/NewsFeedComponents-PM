@@ -30,20 +30,46 @@ header nav {
   display: flex;
   flex-direction: row;
   align-self: flex-start;
-  position: absolute;
-  bottom: -40px;
+  position: relative;
+  left: -550;
+  bottom: -40;
+  animation-name: slidein;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes slidein {
+  from {
+    left: -700;
+  }
+  to {
+    left: 0;
+  }
 }
 header nav a {
   color: white;
   background: #BB1334;
   border: 1px solid white;
-  padding: 3px 10px;
+  padding: 10px 10px;
+  font-weight: bolder;
+  cursor: pointer;
 }
 .hidden {
   display: none;
 }
+.hideNav {
+  animation-name: slideout;
+  animation-duration: 1s;
+}
+@keyframes slideout {
+  from {
+    left: 0;
+  }
+  to {
+    left: -700;
+  }
+}
 .article {
-  border: 3px dashed crimson;
+  border: 3px dashed #BB1334;
   margin: 10px;
   padding: 10px;
 }
