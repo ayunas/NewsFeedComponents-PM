@@ -3,22 +3,28 @@ h1 {
 }
 .wrapper {
   width: 1000px;
-  border: 1px solid green;
+  border: 5px solid #BB1334;
   margin: 0 auto;
   text-align: center;
 }
 header {
   border: 5px solid black;
-  background: crimson;
+  background: #BB1334;
   color: white;
   display: flex;
   flex-direction: column;
   position: relative;
 }
-header img {
+header #hamburger {
   align-self: flex-start;
   position: absolute;
   bottom: -10;
+}
+header #hamburger:hover {
+  cursor: pointer;
+}
+header #lambda-logo {
+  width: 100px;
 }
 header nav {
   display: flex;
@@ -29,7 +35,7 @@ header nav {
 }
 header nav a {
   color: white;
-  background: black;
+  background: #BB1334;
   border: 1px solid white;
   padding: 3px 10px;
 }
@@ -40,4 +46,7 @@ header nav a {
   border: 3px dashed crimson;
   margin: 10px;
   padding: 10px;
+}
+.article .expandButton:hover {
+  cursor: pointer;
 }
